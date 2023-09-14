@@ -4,6 +4,7 @@ let shop = document.getElementById('shop');
 
 let basket = JSON.parse(localStorage.getItem("Vinayak")) ||[];
 
+//Main function to genarate the our clothCards.
 let genarateShop = () => {
     return  (shop.innerHTML= shopItemData.map((x)=>{
         let {id, name,price,desc,img} = x
